@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DarkTestiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-z2-CUw" customClass="View" customModule="DarkTestiOS12" customModuleProvider="target">
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <color key="backgroundColor" name="DynamicColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OaJ-Yb-Wjs"/>
+                                    <constraint firstAttribute="width" constant="240" id="syR-0U-o6V"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdf-0x-SQx" customClass="View" customModule="DarkTestiOS12" customModuleProvider="target">
+                                <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="C1B-YD-C4R"/>
+                                    <constraint firstAttribute="width" constant="240" id="dWt-dh-aJF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ibBackgroundColor">
+                                        <color key="value" name="DynamicColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mdf-0x-SQx" firstAttribute="top" secondItem="a8c-z2-CUw" secondAttribute="bottom" constant="27" id="8dL-iC-lwT"/>
+                            <constraint firstItem="a8c-z2-CUw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lJa-Ae-Xt7"/>
+                            <constraint firstItem="Mdf-0x-SQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0J-t6-mTp"/>
+                            <constraint firstItem="a8c-z2-CUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tJ0-fz-vl7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="DynamicColor">
+            <color red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
